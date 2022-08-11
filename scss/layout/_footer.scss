@@ -1,0 +1,28 @@
+
+
+.text__footer {
+	a {
+		font-family: $ff-crimson;
+		color: $clr-marron;
+		font-size: 1.3rem;
+		&:hover {
+			color: $clr-naranja;
+		}
+		@include sm {
+			font-size: 0.6rem;
+			text-align: center;
+		}
+	}
+}
+.text__footer1 {
+	p {
+		font-size: 1.3rem;
+		font-family: $ff-crimson;
+		color: $clr-amarillo;
+		
+		@include sm {
+			font-size: 1rem;
+		}
+	}
+}
+

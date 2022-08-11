@@ -1,0 +1,19 @@
+{
+  "name": "mi_proyecto",
+  "version": "1.0.0",
+  "description": "proyecto_final",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomi-422/mi_proyecto.git"
+  },
+  "author": "Tomás Formica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomi-422/mi_proyecto/issues"
+  },
+  "homepage": "https://github.com/Tomi-422/mi_proyecto#readme"
+}

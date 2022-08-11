@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.sub__title {
+	text-align: center;
+	font-family: $ff-crimson;
+	color: $clr-naranja;
+	font-style: italic;
+	margin-top: 30px;
+	& h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+	}
+	@include sm { 
+		margin: 20% 0 0 0;
+		& h2 {
+			font-size: 1.8rem;
+		}
+	}
+}
+body {
+	background: #FFEFBA;
+	background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);
+	background: linear-gradient(to top, #FFFFFF, #FFEFBA);
+	min-height: 100vh;
+	margin: 0;
+	position: relative;
+}
+
+footer {
+	background-color: $clr-claro;
+	padding: 20px;
+	margin-top: 50px;
+	width: 100%;
+}
+

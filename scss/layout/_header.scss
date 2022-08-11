@@ -1,0 +1,46 @@
+.main__title {	
+	@include cent;
+	margin: 5% 0 2%;
+	font-family: $ff-crimson;
+	color: $clr-amarillo;
+	text-decoration: none;
+	font-size: 3.5rem;
+	font-weight: 700;
+	text-align: center;
+
+	@include sm {
+		font-size: 1.5rem;
+		margin: 15% 15%;
+	}
+}
+.encabezado__nav {
+	font-family: $ff-crimson;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: $clr-marron;
+}
+.encabezado__nav-1 {
+	@include md {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		text-align: center;
+	}
+	@include sm {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		text-align: center;
+	}
+	&:hover {
+		color: $clr-naranja;
+	}
+}
+.logo {
+	width: 50px;
+	height: 50px;
+}
+
+.navbar-text {
+	@include lg {
+		display: none;
+	}
+}

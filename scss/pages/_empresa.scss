@@ -1,0 +1,37 @@
+.empresa {
+	padding: 50px;
+	&__text {
+		margin-top: 50px;
+		font-size: 2rem;
+		font-family: $ff-crimson;
+		color: $clr-gris;
+		line-height: 2rem;
+		@include md {
+			font-size: 1.5rem;
+		}
+		@include sm {
+			font-size: 1rem;
+			margin-top: 0;
+		}
+	}
+	@include md {
+		flex-direction: column;
+		align-items: center;
+	}
+	@include sm {
+		flex-direction: column;
+		padding: 0;
+	}
+}
+.map iframe {
+	margin-top: 50px;
+	@include sm {
+		display: none;
+	}
+}
+
+.emp__sub {
+	@include sm {
+		display: none;
+	}
+}
