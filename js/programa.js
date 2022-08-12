@@ -131,18 +131,18 @@ while (i != 0) {
 
             switch (encontradom.nombre) {
                 case "servicio prueba":
-                    totalC = suma(totalC, carrito[2].precio);
-                    alert("Total a pagar: $" + totalC);
+                    totalS = suma(totalS, carrito[2].precio);
+                    alert("Total a pagar: $" + totalS);
                     carrito[2].cantidad++;
                     break;
                 case "servicio facturacion":
-                    totalC = suma(totalC, carrito[3].precio);
-                    alert("Total a pagar: $" + totalC);
+                    totalS = suma(totalS, carrito[3].precio);
+                    alert("Total a pagar: $" + totalS);
                     carrito[3].cantidad++;
                     break;
                 case "salir":
                     j = 0;
-                    alert("Total a pagar: $" + totalC);
+                    alert("Total a pagar: $" + totalS);
                     break;
                 default:
                     alert("No Ingresó un 1 ni un 2");
