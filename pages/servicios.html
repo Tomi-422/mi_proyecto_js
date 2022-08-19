@@ -55,8 +55,8 @@
   <!-- Main -->
   <main>
     <h1 data-aos="zoom-in" class="main__title display-4 fw-bold">Nuestros Servicios</h1>
-    <section class="tarjetas">
-      <div class="servicios">
+    <section id="shops" class="tarjetas container-fluid">
+      <!-- <div class="servicios">
         <div class="servicio">
           <div class="servicio__img">
             <img src="../assets/img/sirviendo-card.png" alt="hombre agarrando cafe recien servido">
@@ -94,7 +94,21 @@
             <button class="button__main">Más Info</button>
           </div>
         </div>
-      </div>
+      </div> -->
+    </section>
+    <section class="container-fluid">
+      <h3>Carrito:</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">descripcion</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="mostrarCarrito">
+                    
+                </tbody>
+            </table>
     </section>
   </main>
   <!-- Footer -->
@@ -111,6 +125,7 @@
   <script>
     AOS.init();
   </script>
+  <script src="../js/productos.js"></script>
   <script src="../js/programa.js"></script>
 </body>
 

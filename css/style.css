@@ -298,10 +298,10 @@ footer {
 .tarjetas {
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 90%;
   height: 100%;
-  margin-left: 8%;
+  margin-right: 2%;
 }
 @media (max-width: 769px) {
   .tarjetas {
@@ -315,7 +315,6 @@ footer {
 
 .servicios {
   padding: 1rem;
-  width: calc(100% - 2rem);
 }
 @media (max-width: 769px) {
   .servicios {
@@ -323,12 +322,14 @@ footer {
     margin-left: 10%;
   }
 }
+
 .servicio {
   background-color: #6E675F;
   padding: 1rem;
   border-radius: 0.5rem;
   width: 80%;
   height: 100%;
+  flex-wrap: wrap;
 }
 .servicio__img {
   margin-top: 50px;
