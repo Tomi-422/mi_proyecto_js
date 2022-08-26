@@ -1,6 +1,6 @@
 let carrito=[]; 
 let shop=document.getElementById("shops");
-let boton_presupuesto = document.getElementById("presupuesto");
+
 
 if(localStorage.getItem("carrito")){
     carrito=JSON.parse(localStorage.getItem("carrito"));
@@ -36,7 +36,6 @@ function crearCards(){
 function sumarAlCarrito(producto){
     carrito.push(producto);
     console.log(carrito);
-    alert(producto.descripcion+" fue agregado al carrito correctamente!");
     document.getElementById("mostrarCarrito").innerHTML+=`
         <tr>
             <td>${producto.descripcion}</td>
@@ -44,11 +43,15 @@ function sumarAlCarrito(producto){
         </tr>
     `;
     localStorage.setItem("carrito",JSON.stringify(carrito));
+
+    Swal.fire({
+        icon: 'success',
+        title: producto.descripcion,
+        text: 'Agregado al carrito correctamente!',
+        showConfirmButton: false,
+        timer: 1500
+      })
+      
 }
 
 
-boton_presupuesto.addEventListener("click", respuestaClick);
-
-function respuestaClick() {
-    console.log("Respuesta evento");
-}; 
