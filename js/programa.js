@@ -15,20 +15,22 @@ const estandarPesosArgentinos = Intl.NumberFormat('es-ES');
 //Referencias de elementos
 const contenedorProductos = document.querySelector("#shops");
 const contenedorCarritoCompras = document.querySelector("#mostrarCarrito");
-const contenedorFooterCarrito = document.querySelector("#footer")
+const contenedorFooterCarrito = document.querySelector("#footer");
+const botonFinalizarCompra = document.querySelector("#terminarCompra");
+const botonSubmit = document.querySelector("#confirmar");
 
 //Llamado de funciones
 sumarAlCarrito();
 cargarJSONLocal();
 
 //Declaracion de funciones
-function cargarJSONLocal(){
-    const URLJSON='productos.json'
+function cargarJSONLocal() {
+    const URLJSON = 'productos.json'
     fetch(URLJSON)
-        .then( resp => resp.json())
-        .then ( data => {
+        .then(resp => resp.json())
+        .then(data => {
             data.forEach(
-               (elemento) => productos.push(elemento)
+                (elemento) => productos.push(elemento)
             )
             dibujarCatalogoProductos();
         })
@@ -72,9 +74,13 @@ function sumarAlCarrito() {
         contenedorFooterCarrito.innerHTML = `
         <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
     `;
+        botonFinalizarCompra.innerHTML ="";
     } else {
         contenedorFooterCarrito.innerHTML = `
         <th scope="row" colspan="5">Total de la compra: $${estandarPesosArgentinos.format (sumaCarrito)}</th>
+    `;
+        botonFinalizarCompra.innerHTML = `
+            <a class="btn btn-primary" href="./fincompra.html" role="button">Terminar compra</a>
     `;
     }
 }
@@ -170,3 +176,10 @@ clear.addEventListener('click', () => {
     productosDentroCarrito.splice(0, productosDentroCarrito.length);
     sumarAlCarrito();
 });
+
+
+   
+
+   
+
+
