@@ -1,5 +1,5 @@
 {
-  "name": "mi_proyecto",
+  "name": "mi_proyecto_js",
   "version": "1.0.0",
   "description": "proyecto_final",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tomi-422/mi_proyecto.git"
+    "url": "git+https://github.com/Tomi-422/mi_proyecto_js.git"
   },
   "author": "Tomás Formica",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tomi-422/mi_proyecto/issues"
+    "url": "https://github.com/Tomi-422/mi_proyecto_js/issues"
   },
-  "homepage": "https://github.com/Tomi-422/mi_proyecto#readme"
+  "homepage": "https://github.com/Tomi-422/mi_proyecto_js#readme"
 }

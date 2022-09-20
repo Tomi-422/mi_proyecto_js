@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="servicios-de-cafe expendedoras-de-bebidas-calientes cafeteras reuniones">
-  <title>Servicios</title>
+  <title>Tienda</title>
   <!-- Icon Font Stylesheet -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
   <!-- bootstrap -->
@@ -37,7 +37,7 @@
             <a class="nav-link encabezado__nav encabezado__nav-1" href="./empresa.html">Empresa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link encabezado__nav encabezado__nav-1" href="./servicios.html">Servicios</a>
+            <a class="nav-link encabezado__nav encabezado__nav-1" href="./tienda.html">Tienda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link encabezado__nav encabezado__nav-1" href="./maquinas.html">Maquinas</a>
@@ -46,51 +46,96 @@
             <a class="nav-link encabezado__nav encabezado__nav-1" href="./contacto.html">Contacto</a>
           </li>
         </ul>
+        <a id="toggleMyModal" class="encabezado__nav position-relative"data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../assets/img/carrito.png"
+          alt="carrito" class="logo">
+          <span id="nArticulos" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+            <!-- <span class="visually-hidden">unread messages</span>  -->
+          </span>
+        </a>
         <span class="navbar-text encabezado__nav">
           Café de verdad
         </span>
       </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="container">
+                      <table class="table">
+                          <thead>
+                              <tr>
+                              <th scope="col">ID</th>
+                              <th scope="col">Nombre</th>
+                              <th scope="col">Cantidad</th>
+                              <th scope="col">Precio</th>
+                              <th scope="col">Total</th>
+                              </tr>
+                          </thead>
+                          <tbody id="mostrarCarrito"></tbody>
+                          <tfoot>
+                              <tr id="footer">
+                              <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                              </tr>
+                          </tfoot>
+                          </table>
+                      <div class="row" id="cards"></div>
+                  </div>
+              
+              </div>
+              <div class="modal-footer">
+              <button id="clearAll" type="button" class="btn btn-danger">Borrar Carrito</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Terminar compra</button>
+              </div>
+          </div>
+      </div>
+  </div>
   </header>
   <!-- Main -->
   <main>
-    <h1 data-aos="zoom-in" class="main__title display-4 fw-bold">Nuestros Servicios</h1>
-    <section id="shops" class="tarjetas container-fluid">
-      <!-- Inyeccion desde js -->
-    </section>
-    <section class="container-fluid">
-      <h2 class="sub__title">Carrito:</h2>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Descripcion:</th>
-                        <th scope="col">Precio:</th>
-                    </tr>
-                </thead>
-                <tbody id="mostrarCarrito">
-                    
-                </tbody>
-            </table>
+    <h1 data-aos="zoom-in" class="main__title display-4 fw-bold">Nuestros Productos</h1>
+
+
+    <section class="d-flex justify-content-center mt-5">
+      <article class="container">
+        <div id="shops" class="row row-cols-1 g-4 justify-content-between">
+        <!-- Inyeccion desde js -->
+        </div>
+      </article>
     </section>
   </main>
   <!-- Footer -->
+
+
   <footer
     class="container-fluid d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top text__footer1">
     <p class="col-md-12 text-center mb-0">© 2022 Su Vend Todos los derechos reservados</p>
   </footer>
   <!-- Fin footer -->
+
+
   <!-- Bootstrap 5.2.0 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
   </script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
   <!-- Sweet alert -->
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
   <!-- Programa Js -->
-  <script src="../js/productos.js"></script>
+  <script src="./productos.json"></script>
   <script src="../js/programa.js"></script>
 </body>
 

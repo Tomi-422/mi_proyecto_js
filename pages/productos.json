@@ -1,0 +1,50 @@
+[
+    {
+       "id":1,
+       "nombre":"Café Nescafe Tradicion",
+       "precio":2000,
+       "imagen":"../assets/img/cafe-nescafe.png"
+    },
+    {
+       "id":2,
+       "nombre":"Café Cabrales Grano",
+       "precio":1400,
+       "imagen":"../assets/img/cafe-grano.png"
+    },
+    {
+       "id":3,
+       "nombre":"Café Nescafe Dolca",
+       "precio":1200,
+       "imagen":"../assets/img/cafe-dolca.png"
+    },
+    {
+       "id":4,
+       "nombre":"Leche Svelty",
+       "precio":1500,
+       "imagen":"../assets/img/leche-svelty.png"
+    },
+    {
+       "id":5,
+       "nombre":"Leche Leve Sur",
+       "precio":1300,
+       "imagen":"../assets/img/leche-sur.png"
+    },
+    {
+       "id":6,
+       "nombre":"Nesquik lacté",
+       "precio":1400,
+       "imagen":"../assets/img/nesquik.png"
+    },
+    {
+       "id":7,
+       "nombre":"ChocoSur",
+       "precio":1200,
+       "imagen":"../assets/img/choco-sur.png"
+    },
+    {
+       "id":8,
+       "nombre":"Azucar Ledesma",
+       "precio":1000,
+       "imagen":"../assets/img/azucar.png"
+    }
+ ]
